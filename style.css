@@ -27,9 +27,9 @@ a {
 }
 
 /* trying to figure out how to just have nav links turn yellow */
-/* a:hover {
+.nav-link:hover {
   background-color: #ffff00;
-} */
+}
 
 @-ms-viewport {
   width: device-width;
@@ -151,31 +151,29 @@ nav #menu li a:hover {
 }
 
 #content #cover .title {
-  font-size: 100px;
   font-size: 10rem;
 }
 
 #content #cover .title .hello {
   display: block;
   font-size: 3rem;
-  font-size: 30px;
-  margin: 20px 0;
   margin: 2rem 0;
 }
 
 #content #cover .title .name {
-  display: block;
+  /* display: block; */
+  /* background: #ffff00; */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffff00 50%);
+  /* color options #ffd0ae #ffff00 */
   font-family: 'Yantramanav', sans-serif;
   line-height: 1;
-  background: #ffff00;
-  /* try having name half highlighted? */
-  /* the gap between name and icons here? */
+  padding-top: 0.6rem;
 }
 
-#content #cover .icons {
-  margin: 20px 0 10px;
+/* #content #cover .icons {
+  margin: 10px 0 10px;
   margin: 1rem 0 1rem;
-}
+} */
 
 #content #cover .icons a {
   display: inline-block;
@@ -185,6 +183,17 @@ nav #menu li a:hover {
   margin-right: 8px;
   margin-right: 0.8rem;
   text-decoration: none;
+}
+
+#content #cover .say-hi {
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffff00 50%); */
+  font-family: 'Yantramanav', sans-serif;
+  line-height: 1;
+}
+
+#content #cover .projects {
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffff00 50%); */
+  font-family: 'Yantramanav', sans-serif;
 }
 
 #content #introduction {
