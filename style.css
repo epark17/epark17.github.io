@@ -39,15 +39,15 @@ a {
   text-decoration: none;
 }
 
+/* need to create logo.png */
 /* #brand {
   position: fixed;
   top: 0;
   right: 0;
-  margin: 20px;
   margin: 2rem;
-}
+} */
 
-#brand .logo-link {
+/* #brand .logo-link {
   display: block;
   background: url('img/#logo.png') no-repeat;
   background-size: 85px;
@@ -57,10 +57,6 @@ a {
   white-space: nowrap;
   overflow: hidden;
   background-position-y: 5px;
-}
-
-#brand .logo-link:hover {
-  background-color: #ffff00;
 } */
 
 /* Font Sizing */
