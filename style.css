@@ -35,29 +35,24 @@ a {
 }
 
 /* Logo */
-#brand .logo-link {
-  text-decoration: none;
-}
-
-/* need to create logo.png */
-/* #brand {
-  position: fixed;
+#brand {
   top: 0;
   right: 0;
-  margin: 2rem;
-} */
+  margin: 1.5rem;
+}
 
-/* #brand .logo-link {
+#brand .logo-link {
   display: block;
-  background: url('img/#logo.png') no-repeat;
+  background: url('img/IMG_4549.png') no-repeat;
   background-size: 85px;
   width: 85px;
   height: 85px;
-  text-indent: 110%;
+  /* text-indent: 110%;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; */
   background-position-y: 5px;
-} */
+  text-decoration: none;
+}
 
 /* Font Sizing */
 h1,
@@ -74,12 +69,7 @@ h2 {
   font-size: 2rem;
 }
 
-/* h3 {
-  font-size: 2.1rem;
-} */
-
 p {
-  /* font-size: 16px; */
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 15px 0;
@@ -89,24 +79,20 @@ p {
 /* Navigation */
 nav {
   width: 100%;
-  height: 80px;
+  height: 8rem;
   z-index: 1;
 }
 
 nav #brand {
   float: left;
   display: block;
-  margin-left: 82px;
+  margin-left: 85px;
   line-height: 80px;
   font-weight: bold;
 }
 
 nav #brand a {
   transition: all 0.3s ease-out;
-}
-
-nav #brand a:hover {
-  text-decoration: none;
 }
 
 nav #menu {
@@ -119,18 +105,10 @@ nav #menu li {
   padding-left: 4rem;
   display: inline-block;
   cursor: pointer;
-  font-weight: 300;
-  line-height: 80px;
+  font-weight: 500;
+  line-height: 8rem;
   position: relative;
   transition: all 0.3s ease-out;
-}
-
-nav #menu li span {
-  font-weight: 700;
-}
-
-nav #menu li a:hover {
-  text-decoration: none;
 }
 
 /* Content */
@@ -159,16 +137,10 @@ nav #menu li a:hover {
   /* display: block; */
   /* background: #ffff00; */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffff00 50%);
-  /* color options #ffd0ae #ffff00 */
   font-family: 'Yantramanav', sans-serif;
   line-height: 1;
   padding-top: 0.6rem;
 }
-
-/* #content #cover .icons {
-  margin: 10px 0 10px;
-  margin: 1rem 0 1rem;
-} */
 
 #content #cover .icons a {
   display: inline-block;
@@ -203,32 +175,29 @@ nav #menu li a:hover {
   line-height: 1.8;
 }
 
-#content #introduction p.strong {
-  font-weight: 700;
-}
-
 #content #introduction #project-info {
   margin-top: 5rem;
 }
 
 /* Button Styling */
 .btn {
-  border: none;
-  padding: 15px 32px;
+  display: inline-block;
+  border: 2px solid #f04d59;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  font-size: 1.6rem;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  margin: 4px 2px;
-  cursor: pointer;
-  border: 2px solid #f04d59;
+  background-color: #fff;
   color: #f04d59;
+  cursor: pointer;
+  /* -webkit-transition-duration: 0.4s; //Safari
+  transition-duration: 0.4s; */
 }
 
-.btn-lrg {
-  font-size: 2.4rem;
-  width: 100%;
-  align-content: center;
+.btn:hover {
+  background-color: #f04d59;
+  color: #fff;
 }
 
 /* Contact Section */
@@ -238,21 +207,22 @@ nav #menu li a:hover {
   padding-bottom: 10%;
 }
 
-#form {
+/* #form {
   position: relative;
   width: 400px;
   margin: 50px auto 100px auto;
-}
+} */
 
 input {
-  font-size: 0.875em;
-  margin: 10px 0;
   background: transparent;
-  border: 0px;
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 0;
   border-bottom: 2px solid #f04d59;
-  padding: 10px;
-  width: 100%;
+  width: 110%;
 
+  /* how to prevent blue when loading */
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -260,38 +230,36 @@ input {
 }
 
 textarea {
-  margin: 0px 0;
   background: transparent;
-  border: 0px;
-  padding: 10px;
-  width: 100%;
-  height: 250px;
-  max-height: 110px;
   font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
+  font-size: 1rem;
+  margin: 0px 0;
+  padding: 10px;
+  border: 0px;
   border-bottom: 2px solid #f04d59;
-  /* transition: all 0.3s ease-in-out;
+  width: 110%;
+  height: 250px;
+  max-height: 150px;
+
+  /* how to prevent blue when loading */
+  transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out; */
+  -ms-transition: all 0.3s ease-in-out;
 }
 
 /* Responsive */
 @media (max-width: 1200px) {
-  #logo {
-    margin: 10px;
+  #brand {
     margin: 1rem;
   }
 
   #content #cover .title {
-    font-size: 80px;
     font-size: 8rem;
   }
 
   #content #cover .title .hello {
     display: block;
-    font-size: 2.5rem;
-    font-size: 25px;
   }
 
   #content #introduction {
@@ -302,20 +270,17 @@ textarea {
 
 @media (max-width: 912px) {
   body {
-    margin: 80px;
     margin: 8rem;
   }
 }
 
 @media (max-width: 768px) {
   body {
-    margin: 30px;
     margin: 3rem;
   }
 
   #brand {
     position: initial;
-    margin: 10px auto;
     margin: 1rem auto;
   }
 
@@ -337,6 +302,5 @@ textarea {
     width: 25px;
     font-size: 2.5rem;
     margin-right: 1.2rem;
-    /* should I have all rem units with px units? */
   }
 }
