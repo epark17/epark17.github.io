@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="author" content="Esther Park" />
+
+    <title>Esther Park | Portfolio Website</title>
+
+    <!-- put tab logo - svg/png -->
+    <!-- <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/#"
+    /> -->
+
+    <!-- bootstrap cdns -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,500i,600,700,700i,900|Yantramanav:300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- CSS File -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <!-- JS File -->
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- logo can go here -->
+      <nav>
+        <span id="brand">
+          <a class="logo-link" href="index.html">Esther Park</a>
+        </span>
+        <ul id="menu">
+          <li>
+            <a href="index.html">Home<span>.</span></a>
+          </li>
+          <li>
+            <a href="projects.html">Projects<span>.</span></a>
+          </li>
+          <li>
+            <a href="contact.html">Contact<span>.</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="content">
+        <div id="cover">
+          <h1 class="title">
+            <span class="say-hi">Say<br>Hi 👋</span>
+          </h1>
+          <!-- ***there is a gap between these two sections that i want to shrink -->
+          <div class="icons">
+            <a
+              href="https://www.linkedin.com/in/esther-s-park/"
+              class="fa fa-linkedin"
+            ></a>
+            <a href="https://github.com/epark17" class="fa fa-github"></a>
+            <a
+              href="https://medium.com/@estherspark91"
+              class="fa fa-medium"
+            ></a>
+          </div>
+        </div>
+
+        <!-- can get rid of this introduction div -->
+        <div id="introduction">
+          <h2 id="contact">
+              Got an interesting project or simply want to find out more?
+          </h2>
+          <h2>Let's talk!</h2>
+
+          <div class="contact-section">
+            <div id="contact">
+                <!-- <form id="contactform" class="topBefore" method="POST"> -->
+                <form action="https://formspree.io/estherspark91@gmail.com" method="POST" >
+                    <input type="text" name="name" placeholder="NAME">
+                    <input type="email" name="_replyto" placeholder="EMAIL">
+                    <input type="hidden" name="_subject" value="Website contact" />
+                    <textarea name="message" placeholder="MESSAGE"></textarea>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <button style="margin-top: 5%"class="button" type="submit">SEND MESSAGE</button>
+                </form>
+                <!-- <script>
+                    var contactform = document.getElementById('contactform');
+                    contactform.setAttribute('action', '//formspree.io/' + 'estherspark91' + '@' + 'gmail' + '.' + 'com');
+                </script> -->
+            </div>
+          </d>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
