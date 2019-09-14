@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Esther Park" />
 
     <title>Esther Park | Portfolio Website</title>
@@ -23,7 +23,7 @@
     />
 
     <!-- CSS File -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <!-- jQuery -->
     <!-- <script
@@ -52,6 +52,25 @@
             <a href="contact.html" class="nav-link">Contact<span>.</span></a>
           </li>
         </ul>
+
+        <!-- toggle menu -->
+        <div id="toggle">
+          <div class="span">Menu</div>
+        </div>
+        <div id="resize">
+          <div class="close-btn">Close</div>
+          <ul id="menu">
+            <li>
+              <a href="index.html">Home<span>.</span></a>
+            </li>
+            <li>
+              <a href="projects.html">Projects<span>.</span></a>
+            </li>
+            <li>
+              <a href="contact.html">Contact<span>.</span></a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div id="content">
@@ -107,4 +126,26 @@
       </div>
     </div>
   </body>
+
+  <!-- Green Sock CDN -->
+  <!-- should I move these to the body or head? -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script type="text/javascript">
+    // navigation starts here
+    $('#toggle').click(function() {
+      $(this).toggleClass('on');
+      $('#resize').toggleClass('active');
+    });
+    $('#resize ul li a').click(function() {
+      $(this).toggleClass('on');
+      $('#resize').toggleClass('active');
+    });
+    $('.close-btn').click(function() {
+      $(this).toggleClass('on');
+      $('#resize').toggleClass('active');
+    });
+  </script>
 </html>

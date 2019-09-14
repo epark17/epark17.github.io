@@ -24,16 +24,6 @@
 
     <!-- CSS File -->
     <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery -->
-    <!-- <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    ></script> -->
-
-    <!-- JS File -->
-    <!-- <script type="text/javascript" src="index.js"></script> -->
-    <!-- would like to not make form blink blue when loading -->
   </head>
 
   <body>
@@ -53,6 +43,25 @@
             <a href="contact.html" class="nav-link" >Contact<span>.</span></a>
           </li>
         </ul>
+
+        <!-- toggle menu -->
+        <div id="toggle">
+          <div class="span">Menu</div>
+        </div>
+        <div id="resize">
+          <div class="close-btn">Close</div>
+          <ul id="menu">
+            <li>
+              <a href="index.html">Home<span>.</span></a>
+            </li>
+            <li>
+              <a href="projects.html">Projects<span>.</span></a>
+            </li>
+            <li>
+              <a href="contact.html">Contact<span>.</span></a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div id="content">
@@ -74,7 +83,6 @@
           </div>
         </div>
 
-        <!-- button customize! -->
         <div id="introduction">
           <h2 id="contact">
               Got an interesting project or simply want to say hello?
@@ -96,4 +104,26 @@
       </div>
     </div>
   </body>
+
+  <!-- Green Sock CDN -->
+  <!-- should I move these to the body or head? -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script type="text/javascript">
+    // navigation starts here
+    $('#toggle').click(function() {
+      $(this).toggleClass('on');
+      $('#resize').toggleClass('active');
+    });
+    $('#resize ul li a').click(function() {
+      $(this).toggleClass('on');
+      $('#resize').toggleClass('active');
+    });
+    $('.close-btn').click(function() {
+      $(this).toggleClass('on');
+      $('#resize').toggleClass('active');
+    });
+  </script>
 </html>
